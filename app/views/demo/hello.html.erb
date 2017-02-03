@@ -1,0 +1,24 @@
+<h1>Demo#Hello</h1>
+<p>Hello! World</p>
+
+<%= 1+1 %>
+<br/>
+<% target = 'world!' %>
+<%= "Hello #{target}" %>
+
+<%# 3.times do %>
+<%#="xyz"%>
+<%# end %>
+<br>
+
+<% @array.each do |n|%>
+<%= n %> <br>
+<% end %>
+<br>
+ID: <%= params[:id] %><br/>
+ID: <%= @id %><br/>
+PAGE : <%= @page %><br/> 
+Next PAGE : <%= @page.to_i + 1 %><br/>
+
+<hr/>
+<%= params.inspect %>

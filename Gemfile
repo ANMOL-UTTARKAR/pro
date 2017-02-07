@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
@@ -18,6 +19,12 @@ gem 'pg', group: :production
 #12factor for Heroku
 gem 'rails_12factor', group: :production
 
+#add twitter bootstrap
+gem 'bootstrap', '~> 4.0.0.alpha6'
+
+source 'http://insecure.rails-assets.org' do
+ gem 'rails-assets-tether', '>= 1.3.3'
+end
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
